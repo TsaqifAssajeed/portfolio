@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Globe, FileText } from 'lucide-react'; // Icons for social links
+import { Github, Linkedin, Instagram, FileText } from 'lucide-react'; // Icons for social links
 
 import { Button } from '@/components/ui/button'; // Shadcn Button component
 import {
@@ -14,10 +14,10 @@ import { useIsMobile } from '@/hooks/use-mobile'; // Hook to detect mobile devic
 
 // Array containing social link data (icon, href, label)
 const socialLinks = [
-  { id: 'cv', icon: FileText, href: '#', label: 'CV' }, // TODO: Replace '#' with actual CV link
+  { id: 'cv', icon: FileText, href: '/CV.pdf', download: true, label: 'CV' }, // TODO: Replace '#' with actual CV link
   { id: 'github', icon: Github, href: 'https://github.com/tsaqifassajeed', label: 'GitHub' }, // TODO: Replace '#' with actual GitHub link
-  { id: 'website', icon: Globe, href: '#', label: 'Website' }, // TODO: Replace '#' with actual Website link
-  { id: 'linkedin', icon: Linkedin, href: '#', label: 'LinkedIn' }, // TODO: Replace '#' with actual LinkedIn link
+  { id: 'website', icon: Instagram, href: 'https://instagram.com/tsaqifassajeed', label: 'Instagram' }, // TODO: Replace '#' with actual Website link
+  { id: 'linkedin', icon: Linkedin, href: 'https://www.linkedin.com/in/tsaqif-assajid-0a8168313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' }, // TODO: Replace '#' with actual LinkedIn link
 ];
 
 // Component for the sticky sidebar with social links and animations
@@ -116,6 +116,7 @@ const StickySidebar = () => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
+            download={link.download} // Allow download for CV link
             className="relative group" // Group for hover effects
             variants={iconVariants} // Apply icon animation variants
             whileHover="hover"

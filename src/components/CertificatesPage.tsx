@@ -21,7 +21,7 @@ interface CertificateItem {
  */
 const CertificatesPage = () => {
   const allCertificates: CertificateItem[] = [
-    { id: 1, imageUrl: "/public/certificate/1.png", title: "Belajar HTML" },
+    { id: 1, imageUrl: "/certificate/1.png", title: "Belajar HTML" },
   ];
 
 

@@ -18,25 +18,30 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    console.log('Form Data Submitted:', formData);
-    toast.success('Message sent successfully!', {
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-
-    setFormData({ name: '', email: '', message: '' });
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzHPUtMHyM-zdKFgwR7terMJik2JD7qGCNoyFBYC-2wVltOJp4lyW2LDYr-VLvNl3DbXg/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData as Record<string, string>).toString(),
+      });
+  
+      if (response.ok) {
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // Reset form
+      } else {
+        toast.error('Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      toast.error('An error occurred while sending.');
+    }
+  
     setIsSubmitting(false);
   };
+  
 
   return (
     <div className="w-full max-w-md mx-auto p-4">

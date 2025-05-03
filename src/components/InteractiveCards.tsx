@@ -216,7 +216,7 @@ const InteractiveCards = () => {
                     {/* Placeholder text - replace with an actual <img> tag when image is available */}
                     {/*<span className="text-gray-500 text-sm">Profile Image Placeholder</span>*/}
                     <img
-      src="/public/profil.jpeg" // Ganti dengan path sebenarnya ke gambar profil kamu
+      src="/profil.jpeg" // Ganti dengan path sebenarnya ke gambar profil kamu
       alt="Profile"
       className="w-full h-full object-cover"
     />
@@ -327,7 +327,7 @@ const InteractiveCards = () => {
                         // Profile Card Layout: Full placeholder image
                         <div className="w-full h-full bg-gray-700 flex items-center justify-center">
                            {/* Placeholder text */}
-                           <img src="public/profil.jpeg" alt="tes" className='w-full h-full items-center justify-center'/>
+                           <img src="/profil.jpeg" alt="tes" className='w-full h-full items-center justify-center'/>
                            {/*<span className="text-gray-500 text-sm">Profile Image Placeholder</span>*/}
                         </div>
                       ) : (

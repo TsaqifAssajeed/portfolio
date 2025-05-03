@@ -26,14 +26,14 @@ const ProjectsPage = () => {
       id: 1,
       title: "Database CRUD App",
       description: "Manage your database with this CRUD application. Create, Read, Update, and Delete records easily.",
-      imageUrl: "/public/project/1.png", // Placeholder image URL
+      imageUrl: "/project/1.png", // Placeholder image URL
       sourceLink: "https://github.com/tsaqifassajeed/CRUD",
     },
     {
       id: 2,
       title: "Portfolio Website",
       description: "A personal portfolio website to showcase my projects and skills.",
-      imageUrl: "/public/project/2.png", // Placeholder image URL
+      imageUrl: "/project/2.png", // Placeholder image URL
       liveLink: "https://ecommerce-demo.com",
       sourceLink: "https://github.com/tsaqifassajeed/portfolio-web",
     },
