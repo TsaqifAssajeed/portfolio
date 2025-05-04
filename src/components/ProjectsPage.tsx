@@ -37,6 +37,22 @@ const ProjectsPage = () => {
       liveLink: "https://tsaqifassajeed.github.io/portofolio-web/",
       sourceLink: "https://github.com/tsaqifassajeed/portfolio-web",
     },
+    {
+      id: 3,
+      title: "Halaman Pengalihan ke Chat WA",
+      description: "A simple landing page that redirects to WhatsApp chat.",
+      imageUrl: "/project/3.png", // Placeholder image URL
+      liveLink: "https://tsaqifassajeed.github.io/halaman-pengalihan-ke-chat-WA/",
+      sourceLink: "https://github.com/tsaqifassajeed/halaman-pengalihan-ke-chat-WA",
+    },
+    {
+      id: 4,
+      title: "Website Sbots",
+      description: "A website for Sbots, showcasing their services and offerings.",
+      imageUrl: "/project/4.png", // Placeholder image URL
+      liveLink: "https://sbots.biz.id/",
+      sourceLink: "https://github.com/TsaqifAssajeed/website-Sbot",
+    },
   ];
   
 
@@ -161,7 +177,7 @@ const ProjectsPage = () => {
       <div className="border-t border-gray-700/50 mt-4 pt-4 text-center">
         {/* Link di bawah garis */}
         <a
-          href="mailto:youremail@example.com"
+          href="https://ngl.link/tsaqifassajeed"
           className="text-purple-400 hover:text-purple-300 transition-colors text-sm"
           target="_blank"
           rel="noopener noreferrer"
