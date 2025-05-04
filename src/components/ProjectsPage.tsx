@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       title: "Portfolio Website",
       description: "A personal portfolio website to showcase my projects and skills.",
       imageUrl: "/project/2.png", // Placeholder image URL
-      liveLink: "https://ecommerce-demo.com",
+      liveLink: "https://tsaqifassajeed.github.io/portofolio-web/",
       sourceLink: "https://github.com/tsaqifassajeed/portfolio-web",
     },
   ];
